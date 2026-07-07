@@ -2,12 +2,6 @@
 
 ## Current Phase
 
-### Phase 4 — Content Sections
-- [ ] About the Experience
-- [ ] Packages / Pricing (3 tiers)
-- [ ] Amenities grid
-- [ ] Gallery placeholder grid
-
 ### Phase 5 — Booking Form
 - [ ] All fields per PRODUCT.md spec
 - [ ] Zod validation schema

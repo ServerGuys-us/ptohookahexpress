@@ -3,11 +3,9 @@ import { About } from '@/components/sections/About';
 import { Packages } from '@/components/sections/Packages';
 import { Amenities } from '@/components/sections/Amenities';
 import { Gallery } from '@/components/sections/Gallery';
+import { BookingForm } from '@/components/sections/BookingForm';
 
-const PLACEHOLDERS = [
-  { id: 'booking', label: 'Booking Form' },
-  { id: 'faq', label: 'FAQ' },
-];
+const PLACEHOLDERS = [{ id: 'faq', label: 'FAQ' }];
 
 export default function Home() {
   return (
@@ -17,6 +15,7 @@ export default function Home() {
       <Packages />
       <Amenities />
       <Gallery />
+      <BookingForm />
 
       {PLACEHOLDERS.map((section) => (
         <section
