@@ -4,8 +4,7 @@ import { Packages } from '@/components/sections/Packages';
 import { Amenities } from '@/components/sections/Amenities';
 import { Gallery } from '@/components/sections/Gallery';
 import { BookingForm } from '@/components/sections/BookingForm';
-
-const PLACEHOLDERS = [{ id: 'faq', label: 'FAQ' }];
+import { FAQ } from '@/components/sections/FAQ';
 
 export default function Home() {
   return (
@@ -16,17 +15,7 @@ export default function Home() {
       <Amenities />
       <Gallery />
       <BookingForm />
-
-      {PLACEHOLDERS.map((section) => (
-        <section
-          key={section.id}
-          id={section.id}
-          className="mx-auto max-w-container scroll-mt-[var(--nav-height)] border-t border-border px-6 py-24 lg:px-12"
-        >
-          <p className="text-xs font-medium uppercase tracking-[0.12em] text-accent">Coming soon</p>
-          <h2 className="mt-2 text-3xl">{section.label}</h2>
-        </section>
-      ))}
+      <FAQ />
     </main>
   );
 }

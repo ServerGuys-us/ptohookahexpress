@@ -62,7 +62,7 @@ export function Hero() {
           </div>
 
           {/* Stat badges */}
-          <dl className="mt-14 grid max-w-lg grid-cols-3 gap-4">
+          <dl className="mt-14 grid max-w-lg grid-cols-1 gap-4 sm:grid-cols-3">
             {STATS.map(({ Icon, value, label, starred }) => (
               <div
                 key={label}
