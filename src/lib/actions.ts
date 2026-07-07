@@ -19,6 +19,7 @@ export async function submitBooking(data: BookingInput): Promise<BookingResult> 
     console.info('[booking] new request', {
       name: booking.fullName,
       email: booking.email,
+      location: booking.eventLocation,
       date: booking.eventDate,
       time: booking.startTime,
       guests: booking.guestCount,

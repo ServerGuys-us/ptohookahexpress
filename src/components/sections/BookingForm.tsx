@@ -50,11 +50,11 @@ export function BookingForm() {
     >
       <div className="mx-auto max-w-3xl px-6 py-24 lg:px-12">
         <div className="max-w-2xl">
-          <Eyebrow>Reserve Your Night</Eyebrow>
+          <Eyebrow>Book Your Event</Eyebrow>
           <h2 className="mt-4 text-3xl md:text-4xl">Request a booking</h2>
           <p className="mt-4 text-lg text-text-secondary">
-            Tell us about your night. We&apos;ll confirm availability within 2 hours during operating
-            hours. A deposit secures your reservation.
+            Tell us about your event and where to set up. We&apos;ll confirm availability within 2
+            hours. A deposit secures your date.
           </p>
         </div>
 
@@ -102,6 +102,15 @@ export function BookingForm() {
                 placeholder="(832) 555-0100"
                 error={errors.phone?.message}
                 {...register('phone')}
+              />
+              <Input
+                label="Event location"
+                required
+                wrapperClassName="sm:col-span-2"
+                autoComplete="street-address"
+                placeholder="Address or venue where we'll set up"
+                error={errors.eventLocation?.message}
+                {...register('eventLocation')}
               />
               <Input
                 label="Event date"

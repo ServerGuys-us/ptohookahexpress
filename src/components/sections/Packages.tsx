@@ -16,60 +16,57 @@ const TIERS: Tier[] = [
   {
     name: 'Base',
     price: '$149',
-    cadence: 'per group',
-    blurb: 'The essentials for a great night out with your crew.',
+    cadence: 'per event',
+    blurb: 'The essentials, delivered and set up for a great night with your crew.',
     features: [
-      'Reserved lounge seating',
       '2 premium hookahs',
-      'Flavor menu access',
+      'Full flavor menu',
+      'Delivery, setup & teardown',
       'Up to 6 guests',
-      '3-hour session',
+      '3-hour service window',
     ],
   },
   {
     name: 'VIP',
     price: '$349',
-    cadence: 'per group',
-    blurb: 'Elevated service, prime seating, and the full experience.',
+    cadence: 'per event',
+    blurb: 'More hookahs, a dedicated host, and the full-service experience.',
     featured: true,
     features: [
-      'Prime VIP section',
       '4 premium hookahs',
-      '1 bottle service included',
-      'Dedicated host',
+      'Dedicated on-site host all night',
+      'Premium & signature flavors',
+      'Delivery, setup & teardown',
       'Up to 12 guests',
-      '4-hour session',
+      '4-hour service window',
     ],
   },
   {
-    name: 'Private Buy-Out',
+    name: 'Private Event',
     price: 'Custom',
-    cadence: 'full lounge',
-    blurb: 'The entire lounge, yours for the night. Fully tailored.',
+    cadence: 'tailored',
+    blurb: 'Fully custom setup for larger parties and private events. Built around you.',
     features: [
-      'Exclusive full buy-out',
-      'Unlimited hookah setups',
-      'Custom bottle packages',
+      'Multiple hookah stations',
+      'Custom flavor selection',
       'Personal event coordinator',
+      'Travel across Houston metro',
       'Up to 20 guests',
-      'Custom hours',
+      'Custom service hours',
     ],
   },
 ];
 
 export function Packages() {
   return (
-    <section
-      id="packages"
-      className="scroll-mt-[var(--nav-height)] border-t border-border bg-surface"
-    >
+    <section id="packages" className="scroll-mt-[var(--nav-height)] border-t border-border bg-surface">
       <div className="mx-auto max-w-container px-6 py-24 lg:px-12">
         <div className="max-w-2xl">
           <Eyebrow>Packages &amp; Pricing</Eyebrow>
-          <h2 className="mt-4 text-3xl md:text-4xl">Pick your night</h2>
+          <h2 className="mt-4 text-3xl md:text-4xl">Pick your package</h2>
           <p className="mt-4 text-lg text-text-secondary">
-            Three ways in. Every package includes hosted service and your reserved space — a deposit
-            confirms the booking.
+            Every package includes delivery, setup, and teardown across the Houston metro. A deposit
+            confirms your date.
           </p>
         </div>
 
@@ -83,9 +80,7 @@ export function Packages() {
                   : 'flex flex-col rounded-xl border border-border bg-bg p-8'
               }
             >
-              {tier.featured && (
-                <Badge className="absolute -top-3 left-8">Most Popular</Badge>
-              )}
+              {tier.featured && <Badge className="absolute -top-3 left-8">Most Popular</Badge>}
 
               <h3 className="font-display text-2xl font-bold text-text-primary">{tier.name}</h3>
               <div className="mt-4 flex items-baseline gap-2">
@@ -101,7 +96,11 @@ export function Packages() {
                   <li key={feature} className="flex items-start gap-3 text-sm text-text-primary">
                     <Check
                       size={18}
-                      className={tier.featured ? 'mt-0.5 shrink-0 text-accent' : 'mt-0.5 shrink-0 text-text-secondary'}
+                      className={
+                        tier.featured
+                          ? 'mt-0.5 shrink-0 text-accent'
+                          : 'mt-0.5 shrink-0 text-text-secondary'
+                      }
                       aria-hidden
                     />
                     {feature}
@@ -116,7 +115,7 @@ export function Packages() {
                   size="lg"
                   className="w-full"
                 >
-                  {tier.price === 'Custom' ? 'Request a Quote' : 'Reserve This'}
+                  {tier.price === 'Custom' ? 'Request a Quote' : 'Book This'}
                 </Button>
               </div>
             </article>

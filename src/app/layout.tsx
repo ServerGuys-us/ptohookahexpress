@@ -19,21 +19,21 @@ const inter = Inter({
 });
 
 const SITE_URL = 'https://ptomobile.com';
-const TITLE = 'PTO Hookah Lounge — Reserve Your Night | Houston';
+const TITLE = 'PTO Mobile Hookah — Booked to Your Event | Houston';
 const DESCRIPTION =
-  'Upscale hookah lounge experience by PTO Mobile. Book birthdays, bachelorettes, corporate events, and date nights in the greater Houston metro.';
+  'Mobile hookah service for the greater Houston metro. We bring premium hookah, flavors, and a host to your party, venue, or backyard — birthdays, bachelorettes, and private events.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: TITLE,
   description: DESCRIPTION,
   keywords: [
-    'hookah lounge Houston',
-    'PTO Mobile',
-    'bottle service Houston',
-    'private lounge booking',
-    'bachelorette party Houston',
-    'corporate event lounge',
+    'mobile hookah Houston',
+    'hookah catering Houston',
+    'hookah for events',
+    'party hookah service',
+    'PTO Mobile hookah',
+    'bachelorette hookah Houston',
   ],
   alternates: { canonical: '/' },
   openGraph: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     type: 'website',
     url: SITE_URL,
-    siteName: 'PTO Hookah Lounge',
+    siteName: 'PTO Mobile Hookah',
     locale: 'en_US',
   },
   twitter: {

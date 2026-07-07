@@ -3,28 +3,32 @@ import { Eyebrow } from '@/components/ui/Eyebrow';
 
 const FAQS = [
   {
-    q: 'What is the age requirement?',
-    a: 'All guests must be 21 or older. Valid government-issued photo ID is required at the door for everyone in your party — no exceptions.',
+    q: 'What areas do you serve?',
+    a: 'We travel throughout the greater Houston metro. Bookings outside our standard radius may include a small travel fee — just ask when you book.',
+  },
+  {
+    q: 'What do you provide, and what do I need?',
+    a: 'We bring the hookahs, premium shisha, fresh coals, and everything needed to run them, plus setup and teardown. You just provide the space — an outlet is not required. Lounge furniture and sound are optional add-ons.',
+  },
+  {
+    q: 'Is there an age requirement?',
+    a: 'Yes. All guests using hookah must be 21 or older, and valid government-issued photo ID is required. Our host may check IDs on arrival.',
   },
   {
     q: 'How do deposits work?',
-    a: 'A deposit is required to confirm your reservation. The amount depends on your package and group size, and it is applied toward your final total on the night of your event.',
+    a: 'A deposit is required to confirm your date. The amount depends on your package and group size, and it is applied toward your final total on the day of your event.',
   },
   {
     q: 'What is your cancellation policy?',
-    a: 'Reservations can be rescheduled or cancelled with at least 48 hours notice for a full deposit refund. Cancellations inside 48 hours forfeit the deposit.',
+    a: 'Bookings can be rescheduled or cancelled with at least 48 hours notice for a full deposit refund. Cancellations inside 48 hours forfeit the deposit.',
   },
   {
-    q: 'How many guests can you accommodate?',
-    a: 'We host groups from 2 up to 20 guests. For larger private events, ask about our Private Buy-Out package.',
+    q: 'How many guests can you serve?',
+    a: 'We serve events from 2 up to 20 guests. For larger parties, ask about our Private Event package with multiple hookah stations.',
   },
   {
-    q: 'What are your hours?',
-    a: 'We are open Monday through Sunday, 6PM to 2AM. Start times can be booked from 6PM through 1AM.',
-  },
-  {
-    q: 'How quickly will my booking be confirmed?',
-    a: 'We confirm availability within 2 hours during operating hours. You will hear from us by email or phone with next steps.',
+    q: 'When are you available, and how fast is confirmation?',
+    a: 'We book events nightly, 6PM to 2AM. We confirm availability within 2 hours during those hours by email or phone with next steps.',
   },
 ];
 

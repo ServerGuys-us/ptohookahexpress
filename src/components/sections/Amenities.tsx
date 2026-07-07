@@ -1,4 +1,4 @@
-import { Flame, Wine, Sofa, Disc3, DoorClosed, Sparkles } from 'lucide-react';
+import { Flame, Truck, MapPin, Disc3, Sofa, UserCheck } from 'lucide-react';
 import { Eyebrow } from '@/components/ui/Eyebrow';
 
 const AMENITIES = [
@@ -8,25 +8,22 @@ const AMENITIES = [
     copy: 'From classic mint to house blends — premium shisha, fresh coals, and expert setups all night long.',
     span: true,
   },
-  { Icon: Wine, title: 'Bottle Service', copy: 'Top-shelf spirits and champagne delivered tableside.' },
-  { Icon: Sofa, title: 'Plush Seating', copy: 'Deep lounge sectionals built for your whole party.' },
-  { Icon: Disc3, title: 'Curated Sound', copy: 'DJ-tuned playlists and live sets on select nights.' },
-  { Icon: DoorClosed, title: 'Private Sections', copy: 'Semi-private and fully private areas available.' },
-  { Icon: Sparkles, title: 'Full-Service Host', copy: 'A dedicated host handles every detail of your night.' },
+  { Icon: Truck, title: 'Delivery & Setup', copy: 'We bring, assemble, and tear down everything.' },
+  { Icon: UserCheck, title: 'On-Site Host', copy: 'A dedicated host runs the hookahs at your event.' },
+  { Icon: MapPin, title: 'We Come to You', copy: 'Homes, venues, backyards, rooftops — anywhere in Houston.' },
+  { Icon: Sofa, title: 'Lounge Furniture', copy: 'Optional seating and low tables to set the scene.' },
+  { Icon: Disc3, title: 'Portable Sound', copy: 'Bluetooth speaker setup available on request.' },
 ];
 
 export function Amenities() {
   return (
-    <section
-      id="amenities"
-      className="scroll-mt-[var(--nav-height)] border-t border-border bg-bg"
-    >
+    <section id="amenities" className="scroll-mt-[var(--nav-height)] border-t border-border bg-bg">
       <div className="mx-auto max-w-container px-6 py-24 lg:px-12">
         <div className="max-w-2xl">
-          <Eyebrow>Amenities</Eyebrow>
-          <h2 className="mt-4 text-3xl md:text-4xl">Everything included</h2>
+          <Eyebrow>What We Bring</Eyebrow>
+          <h2 className="mt-4 text-3xl md:text-4xl">Everything comes to you</h2>
           <p className="mt-4 text-lg text-text-secondary">
-            No upsells at the door. The full lounge experience comes standard.
+            We pack, deliver, and run the whole setup. You just pick the date and the spot.
           </p>
         </div>
 
@@ -47,11 +44,7 @@ export function Amenities() {
                     : 'flex h-12 w-12 items-center justify-center rounded-lg border border-border bg-surface-raised'
                 }
               >
-                <Icon
-                  size={22}
-                  className={span ? 'text-text-primary' : 'text-accent'}
-                  aria-hidden
-                />
+                <Icon size={22} className={span ? 'text-text-primary' : 'text-accent'} aria-hidden />
               </span>
               <h3 className="mt-5 font-display text-xl font-bold text-text-primary">{title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-text-secondary">{copy}</p>

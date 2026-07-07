@@ -2,15 +2,22 @@
 
 ## Product Brief
 
-**Product:** Hookah Lounge Booking Landing Page
+**Product:** Mobile Hookah Service Booking Landing Page
 **Brand:** PTO Mobile Experience
 **URL:** ptomobile.com (parent brand)
+
+> **Important:** This is a **mobile hookah service** — PTO brings premium hookah, flavors,
+> and an on-site host to the client's party, venue, or backyard across the greater Houston
+> metro. It is **not** a fixed lounge or bar. Copy must never imply a physical venue guests
+> visit; the service comes to them.
 
 ---
 
 ## Purpose
 
-A single-page booking site for PTO Mobile's Hookah Lounge offering. The page should capture reservations/inquiries with a clear CTA flow, communicate the vibe, and convert visitors into booked guests.
+A single-page booking site for PTO's mobile hookah service. The page should capture booking
+inquiries with a clear CTA flow, communicate the come-to-you convenience and premium vibe, and
+convert visitors into booked events.
 
 ---
 
@@ -50,6 +57,7 @@ A single-page booking site for PTO Mobile's Hookah Lounge offering. The page sho
 - Full name (required)
 - Email (required)
 - Phone (required)
+- Event location — address or venue where we set up (required)
 - Event date (date picker, required)
 - Approximate start time (select, required)
 - Guest count (number, required)

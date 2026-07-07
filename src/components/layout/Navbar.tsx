@@ -27,7 +27,7 @@ export function Navbar() {
             PTO
           </span>
           <span className="text-xs font-medium uppercase tracking-[0.12em] text-accent">
-            Hookah Lounge
+            Mobile Hookah
           </span>
         </Link>
 

@@ -37,6 +37,11 @@ export const bookingSchema = z.object({
     .min(10, 'Enter a valid phone number')
     .max(20, 'Enter a valid phone number')
     .regex(/^[0-9()+\-.\s]+$/, 'Enter a valid phone number'),
+  eventLocation: z
+    .string()
+    .trim()
+    .min(5, 'Enter the event address or venue')
+    .max(200, 'Keep the address under 200 characters'),
   eventDate: z
     .string()
     .min(1, 'Pick an event date')

@@ -1,30 +1,40 @@
 import Image from 'next/image';
-import { Flame, Wine, Music } from 'lucide-react';
+import { Flame, Truck, UserCheck } from 'lucide-react';
 import { Eyebrow } from '@/components/ui/Eyebrow';
 
 const HIGHLIGHTS = [
-  { Icon: Flame, title: 'Premium Hookah', copy: 'Curated flavor menu, fresh coals, spotless setups all night.' },
-  { Icon: Wine, title: 'Bottle Service', copy: 'Top-shelf pours delivered tableside by your host.' },
-  { Icon: Music, title: 'The Vibe', copy: 'Low light, deep sound, and a room built for your crew.' },
+  {
+    Icon: Flame,
+    title: 'Premium Hookah',
+    copy: 'Curated flavor menu, fresh coals, and clean, professional setups every time.',
+  },
+  {
+    Icon: Truck,
+    title: 'Delivered & Set Up',
+    copy: 'We bring everything to your location and handle setup and teardown.',
+  },
+  {
+    Icon: UserCheck,
+    title: 'On-Site Host',
+    copy: 'A dedicated host manages the hookahs all night so your crew never has to.',
+  },
 ];
 
 export function About() {
   return (
-    <section
-      id="about"
-      className="scroll-mt-[var(--nav-height)] border-t border-border bg-bg"
-    >
+    <section id="about" className="scroll-mt-[var(--nav-height)] border-t border-border bg-bg">
       <div className="mx-auto grid max-w-container items-center gap-12 px-6 py-24 lg:grid-cols-2 lg:px-12">
         <div>
-          <Eyebrow>About the Experience</Eyebrow>
-          <h2 className="mt-4 text-3xl md:text-4xl">Step into the room built for the night</h2>
+          <Eyebrow>About the Service</Eyebrow>
+          <h2 className="mt-4 text-3xl md:text-4xl">The hookah experience, brought to you</h2>
           <p className="mt-6 text-lg leading-relaxed text-text-secondary">
-            PTO Hookah Lounge is an intimate, upscale escape in the greater Houston metro. Deep
-            seating, ambient red light, and a soundtrack tuned for the moment — it&apos;s where
-            birthdays turn into stories and ordinary nights become the one everyone remembers.
+            PTO is a fully mobile hookah service in the greater Houston metro. We show up to your
+            party, venue, backyard, or private event with premium hookahs, a full flavor menu, and a
+            host to run it all — so you get the upscale experience without leaving your celebration.
           </p>
           <p className="mt-4 leading-relaxed text-text-secondary">
-            Every reservation is hosted end to end. You show up, we handle the rest.
+            Book a date, pick a package, tell us where. We handle delivery, setup, service, and
+            cleanup.
           </p>
 
           <dl className="mt-10 space-y-6">
@@ -45,7 +55,7 @@ export function About() {
         <div className="relative aspect-[4/5] overflow-hidden rounded-xl border border-border">
           <Image
             src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1200&q=80"
-            alt="Warm, moody lounge seating with ambient lighting"
+            alt="Hookah set up for guests under warm, moody event lighting"
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"
             className="object-cover"

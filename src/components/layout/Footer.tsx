@@ -23,11 +23,11 @@ export function Footer() {
         <div>
           <p className="font-display text-2xl font-bold tracking-tight text-text-primary">PTO</p>
           <p className="mt-1 text-xs font-medium uppercase tracking-[0.12em] text-accent">
-            Hookah Lounge
+            Mobile Hookah
           </p>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-text-secondary">
-            An upscale hookah lounge experience by PTO Mobile — premium flavors, bottle service, and
-            a VIP atmosphere in the greater Houston metro.
+            Mobile hookah service by PTO — premium flavors and full-service setup brought to your
+            party or event across the greater Houston metro.
           </p>
           <div className="mt-6 flex gap-3">
             {SOCIALS.map(({ label, href, Icon }) => (
@@ -67,16 +67,16 @@ export function Footer() {
         {/* Contact */}
         <div>
           <h2 className="text-sm font-semibold uppercase tracking-[0.12em] text-text-primary">
-            Visit &amp; Contact
+            Service &amp; Contact
           </h2>
           <ul className="mt-4 space-y-4 text-sm text-text-secondary">
             <li className="flex items-start gap-3">
               <MapPin size={18} className="mt-0.5 shrink-0 text-accent" />
-              <span>Greater Houston Metro, TX</span>
+              <span>Serving the greater Houston metro — we come to you</span>
             </li>
             <li className="flex items-start gap-3">
               <Clock size={18} className="mt-0.5 shrink-0 text-accent" />
-              <span>Mon–Sun · 6PM – 2AM</span>
+              <span>Available nightly · 6PM – 2AM</span>
             </li>
             <li className="flex items-start gap-3">
               <Phone size={18} className="mt-0.5 shrink-0 text-accent" />
