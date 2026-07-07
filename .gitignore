@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# --- Claude system ---
+secrets/
+*.pem
+*.key
+
+# Misc
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
