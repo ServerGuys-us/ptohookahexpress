@@ -8,7 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "pages:preview": "npm run pages:build && wrangler pages dev",
+    "pages:deploy": "npm run pages:build && wrangler pages deploy"
   },
   "dependencies": {
     "@hookform/resolvers": "3.9.0",
@@ -20,6 +23,7 @@
     "zod": "3.23.8"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.12",
     "@emnapi/core": "1.11.2",
     "@emnapi/runtime": "1.11.2",
     "@emnapi/wasi-threads": "1.2.2",
@@ -32,7 +36,8 @@
     "postcss": "8.4.40",
     "prettier": "3.3.3",
     "tailwindcss": "3.4.7",
-    "typescript": "5.5.4"
+    "typescript": "5.5.4",
+    "wrangler": "^4.107.1"
   },
   "comments": {
     "overrides": "unrs-resolver (via eslint-config-next -> eslint-import-resolver-typescript) pulls wasm optional deps whose versions/presence floated between Windows dev and Linux CI, breaking `npm ci`. The @emnapi/* packages are declared as direct devDeps to force them into the lock on every platform, and pinned via overrides for version consistency."

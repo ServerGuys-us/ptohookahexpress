@@ -9,6 +9,10 @@ out/
 build/
 dist/
 
+# Cloudflare / Vercel build output
+.vercel/
+.wrangler/
+
 # Environment
 .env
 .env.*
