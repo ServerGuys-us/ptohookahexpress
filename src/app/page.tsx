@@ -1,3 +1,5 @@
+import { Hero } from '@/components/sections/Hero';
+
 const SECTIONS = [
   { id: 'about', label: 'About the Experience' },
   { id: 'packages', label: 'Packages / Pricing' },
@@ -10,20 +12,7 @@ const SECTIONS = [
 export default function Home() {
   return (
     <main>
-      {/* Hero — Phase 3 */}
-      <section
-        id="hero"
-        className="mx-auto flex min-h-[70vh] max-w-container flex-col items-center justify-center px-6 py-24 text-center"
-      >
-        <p className="mb-4 text-xs font-medium uppercase tracking-[0.12em] text-accent">
-          PTO Mobile Experience
-        </p>
-        <h1 className="text-5xl md:text-6xl">Hookah Lounge</h1>
-        <p className="mt-6 max-w-md text-lg text-text-secondary">
-          Layout shell is live — navbar, footer, and section anchors. Content sections land in the
-          coming phases.
-        </p>
-      </section>
+      <Hero />
 
       {SECTIONS.map((section) => (
         <section

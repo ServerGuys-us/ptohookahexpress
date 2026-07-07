@@ -2,12 +2,6 @@
 
 ## Current Phase
 
-### Phase 2 — Layout Shell
-- [ ] `Navbar.tsx` — logo, "Reserve Now" CTA
-- [ ] `Footer.tsx` — contact, address, hours, social
-- [ ] `app/layout.tsx` — metadata, font classes, global imports
-- [ ] `app/page.tsx` — section composition
-
 ### Phase 3 — Hero Section
 - [ ] Full-bleed dark hero image
 - [ ] Red glow vignette (signature element)
