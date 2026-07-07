@@ -2,13 +2,6 @@
 
 ## Current Phase
 
-### Phase 3 — Hero Section
-- [ ] Full-bleed dark hero image
-- [ ] Red glow vignette (signature element)
-- [ ] Headline + subhead
-- [ ] Primary + ghost CTA buttons
-- [ ] Stat badges (capacity, rating, etc.)
-
 ### Phase 4 — Content Sections
 - [ ] About the Experience
 - [ ] Packages / Pricing (3 tiers)

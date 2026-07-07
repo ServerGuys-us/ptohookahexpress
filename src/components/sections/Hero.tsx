@@ -66,7 +66,7 @@ export function Hero() {
             {STATS.map(({ Icon, value, label, starred }) => (
               <div
                 key={label}
-                className="rounded-lg border border-border bg-surface/70 px-4 py-4 backdrop-blur-sm"
+                className="rounded-lg border border-border bg-[var(--color-surface-glass)] px-4 py-4 backdrop-blur-sm"
               >
                 <Icon
                   size={20}

@@ -20,6 +20,9 @@
   --color-border:           rgba(255, 255, 255, 0.08);
   --color-border-strong:    rgba(255, 255, 255, 0.18);
 
+  --color-bg-glass:         rgba(10, 10, 10, 0.80);
+  --color-surface-glass:    rgba(17, 17, 17, 0.70);
+
   --color-star:             #F5C518;
   --color-overlay:          rgba(0, 0, 0, 0.60);
   --color-success:          #22C55E;

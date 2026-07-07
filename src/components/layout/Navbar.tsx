@@ -17,7 +17,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-[var(--z-sticky)] border-b border-border bg-bg/80 backdrop-blur-md">
+    <header className="sticky top-0 z-[var(--z-sticky)] border-b border-border bg-[var(--color-bg-glass)] backdrop-blur-md">
       <nav
         aria-label="Primary"
         className="mx-auto flex h-[var(--nav-height)] max-w-container items-center justify-between px-6 lg:px-12"
