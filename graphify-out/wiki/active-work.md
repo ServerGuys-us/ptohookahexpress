@@ -2,14 +2,6 @@
 
 ## Current Phase
 
-### Phase 1 — Project Setup & Design Foundation
-- [ ] Initialize Next.js 14 project (`npx create-next-app@latest`)
-- [ ] Configure Tailwind CSS
-- [ ] Add `tokens.css` to `globals.css`
-- [ ] Set up `next/font` with Playfair Display + Inter
-- [ ] Configure `next.config.js` (image domains, etc.)
-- [ ] Verify dev server runs
-
 ### Phase 2 — Layout Shell
 - [ ] `Navbar.tsx` — logo, "Reserve Now" CTA
 - [ ] `Footer.tsx` — contact, address, hours, social
