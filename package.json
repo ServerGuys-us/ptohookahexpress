@@ -20,6 +20,9 @@
     "zod": "3.23.8"
   },
   "devDependencies": {
+    "@emnapi/core": "1.11.2",
+    "@emnapi/runtime": "1.11.2",
+    "@emnapi/wasi-threads": "1.2.2",
     "@types/node": "20.14.12",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
@@ -30,5 +33,13 @@
     "prettier": "3.3.3",
     "tailwindcss": "3.4.7",
     "typescript": "5.5.4"
+  },
+  "comments": {
+    "overrides": "unrs-resolver (via eslint-config-next -> eslint-import-resolver-typescript) pulls wasm optional deps whose versions/presence floated between Windows dev and Linux CI, breaking `npm ci`. The @emnapi/* packages are declared as direct devDeps to force them into the lock on every platform, and pinned via overrides for version consistency."
+  },
+  "overrides": {
+    "@emnapi/core": "1.11.2",
+    "@emnapi/runtime": "1.11.2",
+    "@emnapi/wasi-threads": "1.2.2"
   }
 }
