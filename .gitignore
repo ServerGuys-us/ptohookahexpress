@@ -12,6 +12,8 @@ dist/
 # Cloudflare / Vercel build output
 .vercel/
 .wrangler/
+.open-next/
+cloudflare-env.d.ts
 
 # Environment
 .env
