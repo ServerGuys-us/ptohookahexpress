@@ -48,8 +48,8 @@ export function Hero() {
             <Button href="#booking" size="lg">
               Book Your Event
             </Button>
-            <Button href="#packages" variant="ghost" size="lg">
-              View Packages
+            <Button href="#faq" variant="ghost" size="lg">
+              Common Questions
             </Button>
           </div>
 

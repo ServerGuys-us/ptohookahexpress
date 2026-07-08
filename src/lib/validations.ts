@@ -19,7 +19,7 @@ export const OCCASIONS = [
   'Other',
 ] as const;
 
-export const PACKAGES = ['Base', 'VIP', 'Private Buy-Out'] as const;
+export const PACKAGES = ['Base', 'VIP', 'Private Event'] as const;
 
 export const MIN_GUESTS = 2;
 export const MAX_GUESTS = 20;

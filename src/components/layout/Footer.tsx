@@ -2,12 +2,8 @@ import Link from 'next/link';
 import { Instagram, Facebook, Phone, MapPin, Clock } from 'lucide-react';
 
 const NAV_LINKS = [
-  { label: 'About', href: '#about' },
-  { label: 'Packages', href: '#packages' },
-  { label: 'Amenities', href: '#amenities' },
-  { label: 'Gallery', href: '#gallery' },
   { label: 'FAQ', href: '#faq' },
-  { label: 'Reserve', href: '#booking' },
+  { label: 'Book Your Event', href: '#booking' },
 ];
 
 const SOCIALS = [
