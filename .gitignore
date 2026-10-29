@@ -29,3 +29,6 @@ secrets/
 .DS_Store
 *.tsbuildinfo
 next-env.d.ts
+
+# Claude Code local config
+.claude/
